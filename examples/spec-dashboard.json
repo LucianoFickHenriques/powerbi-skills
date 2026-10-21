@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "displayName": "Visão Geral",
+      "width": 1280,
+      "height": 720,
+      "visuals": [
+        {"type": "textbox", "text": "Painel de Vendas", "position": {"x": 20, "y": 10, "width": 600, "height": 50}},
+        {"type": "cardVisual", "roles": {"Data": "Medidas[Receita]"}, "position": {"x": 20, "y": 80, "width": 295, "height": 130},
+         "props": {"calloutValue.color": "#1F3A5F"}},
+        {"type": "cardVisual", "roles": {"Data": "Medidas[Margem %]"}, "position": {"x": 335, "y": 80, "width": 295, "height": 130},
+         "props": {"calloutValue.color": "#2E9E5B"}},
+        {"type": "clusteredBarChart", "title": "Receita por região",
+         "roles": {"Category": "Loja[Região]", "Y": "Medidas[Receita]"},
+         "position": {"x": 20, "y": 230, "width": 610, "height": 230},
+         "props": {"dataPoint.defaultColor": "#1F3A5F", "labels.show": true}},
+        {"type": "lineChart", "title": "Receita por mês",
+         "roles": {"Category": "Calendario[Mês]", "Y": "Medidas[Receita]"},
+         "position": {"x": 650, "y": 230, "width": 610, "height": 230},
+         "props": {"dataPoint.defaultColor": "#3A6EA5"}}
+      ]
+    }
+  ]
+}
